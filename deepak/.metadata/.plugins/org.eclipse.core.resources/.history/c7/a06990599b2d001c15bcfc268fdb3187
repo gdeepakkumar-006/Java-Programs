@@ -1,0 +1,21 @@
+package pattern;
+
+public class Pluspattern {
+
+	public static void main(String[] args) {
+		int i=6 , j=6;
+		
+		for(i=0;i<5;i++) {
+			for(j=0;j<5;j++) {
+				if(j==2||i==2) {
+					System.out.print("*");
+				}else {
+					System.out.print("  ");
+				}
+				
+			}
+			System.out.println();
+		}
+	}
+
+}

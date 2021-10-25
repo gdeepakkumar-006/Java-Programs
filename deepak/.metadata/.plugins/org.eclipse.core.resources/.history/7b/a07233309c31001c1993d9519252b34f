@@ -1,0 +1,12 @@
+package com.basicprograms;
+
+ import java.util.*;
+public class Linkedlist {
+
+	public static void main(String[] args) {
+		Linkedlist<String> add=new LinkedList<String>();
+		add.add("ram");
+		
+	}
+
+}

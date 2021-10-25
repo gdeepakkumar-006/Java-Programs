@@ -1,0 +1,5 @@
+package com.basicprograms;
+
+public class LinkedList<T> {
+
+}

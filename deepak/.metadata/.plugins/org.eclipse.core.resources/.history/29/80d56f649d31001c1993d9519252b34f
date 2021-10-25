@@ -1,0 +1,16 @@
+package com.basicprograms;
+
+import java.util.*;
+
+public class Linkedlist1 {
+
+	public static void main(String[] args) {
+		List<String> add=new List<String>();
+		add.add("ram");
+		add.add("sam");
+		add.add("beem");
+		System.out.println(add);
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class Forlooping {
+
+	public static void main(String[] args) {
+		int N=3,i,j;
+		for(i=N;i>=2;i--) {
+			for(j=i;j>=2;j--) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+		
+ 
+	}
+
+}

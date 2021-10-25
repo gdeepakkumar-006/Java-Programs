@@ -1,0 +1,47 @@
+package com.alert;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Prompt {
+
+	public static void main(String[] args) throws InterruptedException {
+ 
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		
+		String FirstUrl="http://demoqa.com/alerts";
+		driver.get(FirstUrl);
+		
+		
+		System.out.println(driver.getCurrentUrl());
+		
+		driver.findElement(By.id("promptButton")).click();
+		Thread.sleep(3000);
+		
+		Alert alt=driver.switchTo().alert();
+		
+		Thread.sleep(3000);
+
+		System.out.println(alt.getText());
+		
+		Thread.sleep(3000);
+
+		alt.sendKeys("the selenium automation testing");
+		
+		Thread.sleep(3000);
+
+		alt.accept();
+		Thread.sleep(3000);
+
+		driver.close();
+		
+		
+		
+	}
+
+}
